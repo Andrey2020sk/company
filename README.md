@@ -1,2 +1,0 @@
-# company
-#very simple landing
