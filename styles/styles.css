@@ -9,7 +9,7 @@
 
 @import url('https://fonts.cdnfonts.com/css/jost-3');
 *{
-    font-family: 'Jost';
+    font-family: 'Jost', sans-serif;
 }
 
 body{
