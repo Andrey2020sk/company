@@ -1,0 +1,325 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+   padding:0;
+} 
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+    padding:0;
+
+}
+
+.header .container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.menu{
+    display: flex;
+    padding:0;
+    margin:0;
+    justify-content: space-evenly;
+}
+.item{
+    border-right: 1px solid black;
+    height :42px;
+    text-align: center;
+}
+
+.a{
+    width:136px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 42px;
+}
+
+.b{
+    width:328px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 46px;
+    letter-spacing: 0.64em;
+    text-align: center;
+    margin: 0 auto;
+}
+.c{
+    width: 297px;
+    text-align: center;
+    /*vertical-align:middle;*/
+    line-height: 38px;
+}
+
+.c input{
+    width: 277px;
+    height: 29px;
+    margin-top:10px;
+    background: #E7E7E7;
+    border: 1px solid #000000;
+    border-radius: 48px;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: center;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.c input::placeholder{
+    /*width: 357px;*/
+    height: 35px;
+
+    top: 12px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    background: url(../images/lupa_black.png) no-repeat;
+    background-position: 32%;
+    background-position-y:4px ;
+    color: #000000;
+}
+
+/*УБИРАЕТ ЕБУЧИЙ ПЛЕЙСХОЛДЕР*/
+.c input:focus::placeholder {
+    color: transparent;
+    background: transparent;
+  }
+
+/*УБИРАЕТ БЛЯДСКИЙ КРЕСТИК*/
+input[type="search"]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type="search"]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FireFox 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FireFox 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } 
+
+.im{
+    width: 42px;
+    vertical-align: middle;
+    line-height: normal;
+}
+
+
+.im img{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    }
+.toggler{
+    border-right: none;
+}
+.toggler:hover{
+    cursor: pointer;
+}
+/*after - создает последний элемент*/
+
+[data-tooltip]:hover::after {
+    content: attr(data-tooltip); /* Выводим текст */
+    cursor: default;
+    font-size: small;
+    position: relative;
+    margin-left:-50px;
+    top:15px;
+    white-space: nowrap;
+    padding: 10px 20px;
+    border: 1px solid #b3c9ce;
+    border-radius: 4px;
+    text-align: center;
+    font: italic 14px/1.3 sans-serif;
+    color: #333;
+    background: #fff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+    transition: all 0.5s;
+  }
+
+
+.main{
+    margin-top:140px;
+    display: flex;
+    justify-content: center;
+}
+
+.main .left{
+    width:234px;
+    text-align: center;
+
+}
+
+.dark{
+    margin-top:0;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    width: 111px;
+    height: 139px;
+    background: linear-gradient(180deg, #675E9D 0%, #9D5E84 100%);
+    border: 1px solid #000000;
+}
+
+.light{
+    margin-top:52px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    width: 111px;
+    height: 139px;
+
+
+    background: linear-gradient(180deg, rgba(103, 94, 157, 0.5) 0%, rgba(157, 94, 132, 0.5) 100%);
+    border: 1px solid rgba(0, 0, 0, 0.7);
+}
+
+.center{
+    width:396px;
+    height:492px;
+    background: linear-gradient(180deg, #675E9D 0%, #9D5E84 100%);
+    border: 1px solid #000000;
+    box-shadow: 7px 13px 0px rgba(0, 0, 0, 0.75);
+}
+
+.center .txt{
+  margin:15%;
+  height: 78%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 46px;
+  text-align: center;
+  letter-spacing: 0.64em;
+  display: flex;
+  justify-content: center;
+  color: #FFFFFF
+}
+
+.right{
+    width:570px;
+    height:492px;
+
+}
+.right div{
+    margin-left:119px;
+}
+
+.itemname{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    height:83px;
+}
+
+.rect{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    box-sizing: border-box;
+    width: 369px;
+    height: 57px;
+    border: 1px solid #000000;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    
+}
+
+.add{
+    margin-top: 22px;
+    width:369px;
+    height:57px;
+    text-align: center;
+    vertical-align: middle;
+   
+}
+
+.add .text{
+    background: black;
+    color: white;
+    height:56px;
+    width:311px;
+    margin:0px;
+    padding:0px;
+    /*line-height: 52px;*/
+}
+pre{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 52px;
+}
+
+
+.add .img{
+    width:56px;
+    height:56px;
+    border-left:1px solid black;
+    text-align: center;
+}
+.img img{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.note{
+    font-family: 'Jost';
+    margin:28px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+}
+.mat{
+    margin-top:42px;
+    background-image: url(../images/arrow_black.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-size: 24px;
+    background-position-y:center;
+    background-position-x:95%;
+
+}
+.dim{
+    margin-top:22px;
+    background-image: url(../images/arrow_black.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-size: 24px;
+    background-position-y:center;
+    background-position-x:95%;
+}
+
+.footer{
+    margin-top: 160px;
+}
+
+.d{
+    width:521px;
+    border-right: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+}
