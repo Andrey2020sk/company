@@ -2,6 +2,14 @@
     padding: 0;
     margin: 0;
 }
+*{
+    background:transparent;
+    /*background-color: #000000;*/
+}
+body{
+    background: var(--bgcolor);
+    color:var(--colortext);
+}
 
 .header{
    padding:0;
@@ -28,7 +36,8 @@
     justify-content: space-evenly;
 }
 .item{
-    border-right: 1px solid black;
+    
+    border-right: 1px solid var(--bordercolor);
     height :42px;
     text-align: center;
 }
@@ -62,8 +71,9 @@
     width: 277px;
     height: 29px;
     margin-top:10px;
-    background: #E7E7E7;
+    background: var(--bgcolorsearch);
     border: 1px solid #000000;
+    border: 1px solid var(--bordercolor);
     border-radius: 48px;
     box-sizing: border-box;
     text-align: center;
@@ -80,17 +90,17 @@
 .c input::placeholder{
     /*width: 357px;*/
     height: 35px;
-
     top: 12px;
+    color:var(--colortext);
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
     line-height: 32px;
     text-align: center;
-    background: url(../images/lupa_black.png) no-repeat;
+    background: var(--imgsearch) no-repeat;
     background-position: 32%;
     background-position-y:4px ;
-    color: #000000;
+ 
 }
 
 /*УБИРАЕТ ЕБУЧИЙ ПЛЕЙСХОЛДЕР*/
@@ -120,10 +130,29 @@ input:focus:-ms-input-placeholder { color:transparent; }
 
 
 .im img{
+
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    
     }
+
+ img[alt="fbk"]{
+    content: var(--imgfbk);
+ }
+
+ img[alt="inst"]{
+    content: var(--imginst);
+ }
+
+img[alt="heart"]{
+    content:var(--imgheart);
+}
+
+img[alt="circle"]{
+    content:var(--imgcir);
+}
+
 .toggler{
     border-right: none;
 }
@@ -202,7 +231,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
-  /*line-height: 140px;*/
+  /*line-height: 32px;*/
   text-align: center;
   letter-spacing: 0.64em;
   /*display: flex;
@@ -234,7 +263,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
     box-sizing: border-box;
     width: 369px;
     height: 57px;
-    border: 1px solid #000000;
+    border: 1px solid var(--bordercolor);
 
     font-style: normal;
     font-weight: 400;
@@ -253,8 +282,8 @@ input:focus:-ms-input-placeholder { color:transparent; }
 }
 
 .add .text{
-    background: black;
-    color: white;
+    background: var(--bgcoloradd);
+    color: var(--txtcoloradd);
     height:56px;
     width:311px;
     margin:0px;
@@ -273,7 +302,7 @@ pre{
 .add .img{
     width:56px;
     height:56px;
-    border-left:1px solid black;
+    border-left:1px solid var(--bordercolor);
     text-align: center;
 }
 .img img{
@@ -294,7 +323,7 @@ pre{
 }
 .mat{
     margin-top:42px;
-    background-image: url(../images/arrow_black.png);
+    background-image: var(--imgrect);
     background-repeat: no-repeat;
     background-size:contain;
     background-size: 24px;
@@ -304,7 +333,7 @@ pre{
 }
 .dim{
     margin-top:22px;
-    background-image: url(../images/arrow_black.png);
+    background-image: var(--imgrect);
     background-repeat: no-repeat;
     background-size:contain;
     background-size: 24px;
@@ -325,3 +354,34 @@ pre{
     line-height: 32px;
     text-align: center;
 }
+
+:root{
+    --bordercolor:black;
+    --bgcolorsearch:#E7E7E7;
+    --bgcoloradd:black;
+    --txtcoloradd:white;
+    --imgsearch:url("../images/lupa_black.png");
+    --imgrect:url(../images/arrow_black.png);
+    --imgfbk:url(../images/facebook_black.png);
+    --imginst:url(../images/inst.png);
+    --imgheart:url(../images/heart_black.png);
+    --imgcir:url(../images/circle_black.jpg);
+}
+  
+  .darktheme {
+    --bgcolor: #000000; /* dark theme background color */
+    --colortext: #fff; /* dark theme text color */
+    --bordercolor:white;
+    --bgcolorsearch:#181818;
+    --bgcolorrect:#1E1E1E;
+    --bgcoloradd:white;
+    --txtcoloradd:black;
+    --imgsearch:url("../images/lupa_white.png");
+    --imgrect:url(../images/arrow_white.png);
+    --imgfbk:url(../images/facebook_white.png);
+    --imginst:url(../images/inst_white.png);
+    --imgheart:url(../images/heart_white.png);
+    --imgcir:url(../images/circle_white.png);
+
+
+  }
