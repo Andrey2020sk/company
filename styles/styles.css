@@ -6,6 +6,12 @@
     background:transparent;
     /*background-color: #000000;*/
 }
+
+@import url('https://fonts.cdnfonts.com/css/jost-3');
+*{
+    font-family: 'Jost', sans-serif;
+}
+
 body{
     background: var(--bgcolor);
     color:var(--colortext);
