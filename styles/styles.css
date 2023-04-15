@@ -202,7 +202,7 @@ input:focus:-ms-input-placeholder { color:transparent; }
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
-  line-height: 100%;/*46px;*/
+  line-height: 140px;/*46px;*/
   text-align: center;
   letter-spacing: 0.64em;
   display: flex;
